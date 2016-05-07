@@ -11,7 +11,7 @@ asel,none
 rect,b,a+b,b,a+b
 cm,centr,area
 asel,all
-asba,obl,centr,,delete,deleteъ
+asba,obl,centr,,delete,delete
 wprota,0,0,90
 wpave,b,0,0
 asbw,all
@@ -31,11 +31,11 @@ lsel,u,loc,x,2*a
 lsel,u,loc,y,0
 lsel,u,loc,y,2*a
 cm,perekrestok,line
-lesize,perekrestok,,,50,20
+lesize,perekrestok,,,50,10
 lsel,s,loc,x,a
 lsel,a,loc,y,a
 cm,kontrkyb,line
-lesize,kontrkyb,,,100
+lesize,kontrkyb,,,50
 et,1,200,6
 mshkey,1 
 esize,0.01
@@ -58,7 +58,7 @@ esize,0.01
 amesh,all
 et,2,200,10 
 type,2
-extopt,esize,50,20
+extopt,esize,50,10
 vext,all,,,0,0,a
 vsel,none
 blc4,0,0,2*a,2*a,-a
@@ -79,6 +79,7 @@ wpave,0,b,0
 vsbw,all
 wpave,0,b+a,0
 vsbw,all
+esize,0.05
 allsel
 nummrg,all
 vmesh,all
