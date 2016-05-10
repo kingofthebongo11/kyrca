@@ -83,3 +83,10 @@ esize,0.05
 allsel
 nummrg,all
 vmesh,all
+cm,domkontyr,volu
+vgen,3,domkontyr,,,0.4,,,,0
+vgen,3,domkontyr,,,,0.4,,,0
+vgen,2,domkontyr,,,0.8,0.4,,,0
+vgen,2,domkontyr,,,0.4,0.8,,,0
+vgen,2,domkontyr,,,0.8,0.8,,,0
+nummrg,all
