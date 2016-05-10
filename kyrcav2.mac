@@ -101,7 +101,7 @@ cm,obl,area
 asel,none
 rect,b+a+a,3*a+b,a+a+b,3*a+b
 cm,centr,area
-asel,all
+asel,a,,,obl
 asba,obl,centr,,delete,delete
 wprota,0,0,90
 wpave,b+a+a,0,0
@@ -114,16 +114,17 @@ asbw,all
 wpave,0,b+3*a,0
 asbw,all
 ---------------
-lsel,s,loc,x,b/2
-lsel,a,loc,x,2*a-b/2
-lsel,a,loc,y,b/2
-lsel,a,loc,y,2*a-b/2
-lsel,u,loc,x,0
+lsel,s,loc,x,b/2+2*a
+lsel,a,loc,x,4*a-b/2
+lsel,a,loc,y,2*a+b/2                    ?????????
+lsel,a,loc,y,4*a-b/2
 lsel,u,loc,x,2*a
-lsel,u,loc,y,0
+lsel,u,loc,x,4*a
 lsel,u,loc,y,2*a
+lsel,u,loc,y,4*a
 cm,perekrestok,line
 lesize,perekrestok,,,50,10
+---------------------------
 lsel,s,loc,x,a
 lsel,a,loc,y,a
 cm,kontrkyb,line
