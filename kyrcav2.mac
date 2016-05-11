@@ -59,7 +59,7 @@ amesh,all
 et,2,200,10 
 type,2
 extopt,esize,50,10
-vext,all,,,0,0,a
+vext,all,,,0,0,2*a
 vsel,none
 blc4,0,0,2*a,2*a,-a
 cm,bigverx,volu
