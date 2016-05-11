@@ -92,8 +92,8 @@ vgen,2,domkontyr,,,0.8,0.8,,,0
 nummrg,all
 
 -------------------
-wprota,0,90,0
-wprota,90,0,0
+wprota,0,0,-90
+wprota,-90,0,0
 wpave,0,0,0
 asel,none
 rect,a+a,4*a,a+a,4*a
