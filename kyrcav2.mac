@@ -4,6 +4,7 @@ fini
 
 a=0.2 
 b=0.1 
+esize,0.01
 
 rect,0,a+a,0,a+a
 cm,obl,area
@@ -37,12 +38,11 @@ lsel,a,loc,y,a
 cm,kontrkyb,line
 lesize,kontrkyb,,,50
 et,1,200,6
-mshkey,1 
-esize,0.01
+mshkey,1
 amesh,all
 et,2,200,10 
 type,2 
-extopt,esize,10,0
+extopt,esize,50,0
 vext,all,,,0,0,a
 cm,osnova,volu
 wprota,0,0,90
@@ -53,12 +53,10 @@ cm,centrverx,area
 nummrg,all
 et,1,200,6
 type,1
-mshkey,1 
-esize,0.01
 amesh,all
 et,2,200,10 
 type,2
-extopt,esize,50,10
+extopt,esize,50,100
 vext,all,,,0,0,2*a
 vsel,none
 blc4,0,0,2*a,2*a,-a
@@ -79,7 +77,6 @@ wpave,0,b,0
 vsbw,all
 wpave,0,b+a,0
 vsbw,all
-esize,0.05
 allsel
 nummrg,all
 vmesh,all
@@ -89,9 +86,9 @@ vgen,3,domkontyr,,,,0.4,,,0
 vgen,2,domkontyr,,,0.8,0.4,,,0
 vgen,2,domkontyr,,,0.4,0.8,,,0
 vgen,2,domkontyr,,,0.8,0.8,,,0
-nummrg,all
 
--------------------
+
+
 wprota,0,0,-90
 wprota,-90,0,0
 wpave,0,0,0
@@ -147,12 +144,10 @@ cm,kontrkyb,line
 lesize,kontrkyb,,,50
 
 et,1,200,6
-mshkey,1 
-esize,0.01
 amesh,all
 et,2,200,10 
 type,2 
-extopt,esize,10,0
+extopt,esize,50,0
 vext,all,,,0,0,a
 cm,osnova,volu
 wprota,0,0,90
@@ -160,10 +155,8 @@ wpave,2*a,2*a,2*a
 asel,none
 rect,b,a+b,b,a+b
 cm,centrverx,area
-nummrg,all
 et,1,200,6
 type,1
-mshkey,1 
 esize,0.01
 amesh,all
 et,2,200,10 
@@ -189,7 +182,6 @@ wpave,2*a,2*a+b,0
 vsbw,all
 wpave,2*a,2*a+b+a,0
 vsbw,all
-esize,0.05
 allsel
 nummrg,all
 vmesh,all
