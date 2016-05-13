@@ -151,7 +151,7 @@ lsel,u,loc,y,6*a
 lesize,all,,,30
 
 
-
+nummrg,all
 et,1,200,6
 amesh,all
 et,2,200,10 
