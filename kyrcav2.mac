@@ -4,7 +4,7 @@ fini
 
 a=0.2 
 b=0.1 
-esize,0.008
+esize,0.01
 
 rect,0,2*a,0,2*a
 cm,obl,area
@@ -33,7 +33,14 @@ lsel,u,loc,x,2*a
 lsel,u,loc,y,0
 lsel,u,loc,y,2*a
 cm,perekrestok,line
-lesize,perekrestok,,,50,10
+lesize,perekrestok,,,30,10
+lsel,s,loc,x,a
+lsel,a,loc,y,a
+lsel,a,loc,x,0
+lsel,a,loc,x,2*a
+lsel,a,loc,y,0
+lsel,a,loc,y,2*a
+lesize,all,,,30
 
 
 et,1,200,6
@@ -42,11 +49,12 @@ amesh,all
 
 et,2,200,10 
 type,2 
-extopt,esize,50,0
+extopt,esize,30,0
 vext,all,,,0,0,a
 cm,osnova,volu
 wprota,0,0,90
 wpave,0,0,a
+
 asel,none
 rect,b,a+b,b,a+b
 cm,centrverx,area
@@ -56,13 +64,13 @@ type,1
 amesh,all
 et,2,200,10 
 type,2
-extopt,esize,50,100
+extopt,esize,30,20
 vext,all,,,0,0,2*a
 vsel,none
-blc4,0,0,2*a,2*a,-a
+blc4,0,0,2*a,2*a,-2*a
 cm,bigverx,volu
 vsel,none
-blc4,b,b,a,a,-a
+blc4,b,b,a,a,-2*a
 cm,smalverx,volu
 vsel,a,,,bigverx
 vsbv,bigverx,smalverx,,delete,delete
@@ -79,6 +87,7 @@ wpave,0,b+a,0
 vsbw,all
 allsel
 nummrg,all
+
 vmesh,all
 cm,domkontyr,volu
 vgen,3,domkontyr,,,0.4,,,,0
@@ -120,8 +129,26 @@ lsel,u,loc,x,4*a
 lsel,u,loc,y,2*a
 lsel,u,loc,y,4*a
 cm,perekrestok,line
-lesize,perekrestok,,,50,10
-
+lesize,perekrestok,,,30,10
+lsel,s,loc,x,3*a
+lsel,a,loc,y,3*a
+lsel,a,loc,x,2*a
+lsel,a,loc,y,4*a
+lsel,a,loc,x,4*a
+lsel,a,loc,y,2*a
+lsel,u,loc,x,0
+lsel,u,loc,x,b
+lsel,u,loc,x,a+b
+lsel,u,loc,x,4*a+b
+lsel,u,loc,x,6*a-b
+lsel,u,loc,x,6*a
+lsel,u,loc,y,0
+lsel,u,loc,y,b
+lsel,u,loc,y,a+b
+lsel,u,loc,y,4*a+b
+lsel,u,loc,y,6*a-b
+lsel,u,loc,y,6*a
+lesize,all,,,30
 
 
 
@@ -129,7 +156,7 @@ et,1,200,6
 amesh,all
 et,2,200,10 
 type,2 
-extopt,esize,50,0
+extopt,esize,30,0
 vext,all,,,0,0,2*a
 cm,osnova,volu
 wprota,0,0,90
@@ -142,7 +169,7 @@ type,1
 amesh,all
 et,2,200,10 
 type,2
-extopt,esize,50,10
+extopt,esize,30,10
 vext,all,,,0,0,a
 vsel,none
 blc4,0,0,2*a,2*a,-a
@@ -210,7 +237,7 @@ cm,right,area
 asel,s,loc,z,3*a
 cm,top,area
 asel,all
-extopt,esize,50,10
+extopt,esize,30,10
 vext,inlet,,,-12*a,0,0
 vext,outlet,,,30*a,0,0
 vext,left,,,0,-12*a,0
@@ -228,3 +255,6 @@ cm,right,area
 asel,s,loc,z,15*a
 cm,top,area
 cdwrite,db,setochka,cdb
+
+
+
