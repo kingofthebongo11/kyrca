@@ -193,6 +193,7 @@ wpave,2*a,2*a+b+a,0
 vsbw,all
 allsel
 nummrg,all
+vclear,all
 vmesh,all
 
 asel,s,loc,x,b
@@ -221,7 +222,23 @@ asel,u,loc,x,4*a+b/2
 asel,u,loc,x,6*a-b/2
 asel,u,loc,y,4*a+b/2
 asel,u,loc,y,6*a-b/2
+asel,u,loc,x,0
+asel,u,loc,x,2*a
+asel,u,loc,x,4*a
+asel,u,loc,x,6*a
+asel,u,loc,y,0
+asel,u,loc,y,2*a
+asel,u,loc,y,4*a
+asel,u,loc,y,6*a
+
+asel,u,loc,z,2*a
+asel,u,loc,z,2.5*a
 asel,a,loc,z,0
+cm,dombk,area
+asel,s,loc,x,3*a
+asel,r,loc,y,3*a
+asel,r,loc,z,2*a
+asel,a,,,dombk
 cm,wall,area
 
 
@@ -239,22 +256,42 @@ asel,s,loc,z,3*a
 cm,top,area
 asel,all
 extopt,esize,30,10
-vext,inlet,,,-12*a,0,0
-vext,outlet,,,30*a,0,0
 vext,left,,,0,-12*a,0
 vext,right,,,0,12*a,0
-vext,top,,,0,0,12*a
 
-asel,s,loc,x,-12*a
+asel,s,loc,x,0
 cm,inlet,area
-asel,s,loc,x,36*a
+asel,s,loc,x,6*a
 cm,outlet,area
-asel,s,loc,y,-12*a
-cm,left,area
-asel,s,loc,y,18*a
-cm,right,area
-asel,s,loc,z,15*a
+asel,all
+vext,inlet,,,-12*a,0,0
+vext,outlet,,,30*a,0,0
+
+asel,s,loc,z,3*a
 cm,top,area
+vext,top,,,0,0,12*a
+allsel
+asel,s,loc,z,0
+asel,a,,,wall
+cmdele,all
+nsla,s,1
+cm,wall,node
+asel,s,loc,x,-12*a
+nsla,s,1
+cm,inlet,node
+asel,s,loc,x,36*a
+nsla,s,1
+cm,outlet,node
+asel,s,loc,y,-12*a
+nsla,s,1
+cm,left,node
+asel,s,loc,y,18*a
+nsla,s,1
+cm,right,node
+asel,s,loc,z,15*a
+nsla,s,1
+cm,top,node
+allsel
 cdwrite,db,setochka,cdb
 
 
