@@ -5,9 +5,6 @@ fini
 a=0.2 
 b=0.1 
 esize,0.01
-a=0.2 
-b=0.1 
-esize,0.01
 
 rect,0,2*a,0,2*a
 cm,obl,area
