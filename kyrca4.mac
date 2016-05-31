@@ -204,11 +204,11 @@ asel,u,loc,z,2.5*a
 asel,r,loc,x,-0.0001,6*a+0.00001
 asel,r,loc,y,-0.0001,6*a+0.00001
 cm,dombk,area
-asel,r,loc,x,0,a
+asel,r,loc,x,0,2*a
 asel,u,loc,z,a+b
 cm,wall1,area
 asel,s,,,dombk
-asel,r,loc,x,4*a,5*a
+asel,r,loc,x,4*a,6*a
 asel,u,loc,z,a+b
 cm,wall2,area
 asel,s,,,dombk
