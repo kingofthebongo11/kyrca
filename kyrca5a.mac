@@ -55,17 +55,8 @@ fini
   et,2,200,10 
   type,2 
   extopt,esize,30,0
- vext,all,,,0,0,a
- asel,a,,,seredina
- nummrg,all
- 
- asel,s,,,seredina
- type,1
- amesh,all
- asel,s,loc,z,a
- type,2 
- extopt,esize,90,0
  vext,all,,,0,0,3*a
+ 
  
 
 asel,s,loc,x,0
