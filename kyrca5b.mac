@@ -23,8 +23,8 @@ fini
   extopt,esize,30,0
  vext,all,,,0,0,a
  asel,s,,,centrniz
- vext,all,,,0,0,a
- allsel
+ vext,all,,,0,0,2*a
+ allsel,all
  nummrg,all
  
 nsla,s,1
