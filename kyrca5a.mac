@@ -70,7 +70,7 @@ cm,right,area
 asel,s,loc,z,3*a
 cm,top,area
 asel,all
-extopt,esize,15,10
+extopt,esize,20,7
 vext,left,,,0,-12*a,0
 vext,right,,,0,12*a,0
 asel,s,loc,x,0
@@ -79,9 +79,11 @@ asel,s,loc,x,6*a
 cm,outlet,area
 asel,all
 vext,inlet,,,-12*a,0,0
+extopt,esize,30,5
 vext,outlet,,,30*a,0,0
 asel,s,loc,z,3*a
 cm,top,area
+extopt,esize,20,7
 vext,top,,,0,0,12*a
 allsel
 asel,s,loc,z,0
