@@ -4,7 +4,7 @@ fini
  
   a=0.2 
   b=0.1 
-  esize,0.01
+  esize,0.02
   rect,0,2*a,0,2*a
   cm,obl,area
  asel,none
@@ -33,14 +33,14 @@ fini
  lsel,u,loc,y,0
  lsel,u,loc,y,2*a
  cm,perekrestok,line
- lesize,perekrestok,,,30,10
+ lesize,perekrestok,,,10,10
  lsel,s,loc,x,a
  lsel,a,loc,y,a
  lsel,a,loc,x,0
  lsel,a,loc,x,2*a
  lsel,a,loc,y,0
  lsel,a,loc,y,2*a
- lesize,all,,,30
+ lesize,all,,,10
  
  
  cm,nachalo,area
@@ -54,7 +54,7 @@ fini
   amesh,all
   et,2,200,10 
   type,2 
-  extopt,esize,30,0
+  extopt,esize,10,0
  vext,all,,,0,0,3*a
  
  
@@ -70,7 +70,7 @@ cm,right,area
 asel,s,loc,z,3*a
 cm,top,area
 asel,all
-extopt,esize,30,10
+extopt,esize,10,10
 vext,left,,,0,-12*a,0
 vext,right,,,0,12*a,0
 asel,s,loc,x,0
