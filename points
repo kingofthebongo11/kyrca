@@ -1,4 +1,25 @@
- MONITOR POINT: point10
+FLOW: Flow Analysis 1
+  &replace OUTPUT CONTROL: 
+    BACKUP RESULTS: point
+      File Compression Level = Default
+      Include Mesh = Off
+      Option = Selected Variables
+      Output Variables List = Pressure,Yplus,Wall Shear,Velocity,Vorticity,Turbulence Kinetic Energy,Turbulence Eddy Dissipation
+      OUTPUT FREQUENCY: 
+        Option = Every Iteration
+      END
+    END
+    MONITOR OBJECTS: 
+      MONITOR BALANCES: 
+        Option = Full
+      END
+      MONITOR FORCES: 
+        Option = Full
+      END
+      MONITOR PARTICLES: 
+        Option = Full
+      END
+      MONITOR POINT: point10
         Cartesian Coordinates = 0.45 [m], 0.80 [m], 0.02 [m]
         Coord Frame = Coord 0
         Option = Cartesian Coordinates
@@ -1414,3 +1435,17 @@
           Option = Initial Mesh Only
         END
       END
+      MONITOR RESIDUALS: 
+        Option = Full
+      END
+      MONITOR TOTALS: 
+        Option = Full
+      END
+    END
+    RESULTS: 
+      File Compression Level = Default
+      Option = Standard
+      Output Equation Residuals = All
+    END
+  END
+END
