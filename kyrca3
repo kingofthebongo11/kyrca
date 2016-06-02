@@ -4,7 +4,7 @@ fini
  
   a=0.2 
   b=0.1 
-  esize,0.01
+  esize,0.02
   rect,0,2*a,0,2*a
   cm,obl,area
  asel,none
@@ -32,14 +32,14 @@ fini
  lsel,u,loc,y,0
  lsel,u,loc,y,2*a
  cm,perekrestok,line
- lesize,perekrestok,,,30,10
+ lesize,perekrestok,,,15,10
  lsel,s,loc,x,a
  lsel,a,loc,y,a
  lsel,a,loc,x,0
  lsel,a,loc,x,2*a
  lsel,a,loc,y,0
  lsel,a,loc,y,2*a
- lesize,all,,,30
+ lesize,all,,,15
  
  
  cm,nachalo,area
@@ -71,7 +71,7 @@ fini
   amesh,all
   et,2,200,10 
   type,2 
-  extopt,esize,30,0
+  extopt,esize,15,0
  vext,all,,,0,0,a
  asel,a,,,seredina
  nummrg,all
@@ -81,7 +81,7 @@ fini
  amesh,all
  asel,s,loc,z,a
  type,2 
- extopt,esize,30,0
+ extopt,esize,15,0
  vext,all,,,0,0,a
  asel,none
  wpave,0,0,2*a
@@ -94,7 +94,7 @@ fini
  amesh,all
  asel,s,loc,z,2*a
 type,2
-extopt,esize,30,0
+extopt,esize,15,0
 vext,all,,,0,0,a
 asel,s,loc,x,b
 asel,a,loc,y,b
@@ -154,7 +154,7 @@ cm,right,area
 asel,s,loc,z,3*a
 cm,top,area
 asel,all
-extopt,esize,30,10
+extopt,esize,20,7
 vext,left,,,0,-12*a,0
 vext,right,,,0,12*a,0
 asel,s,loc,x,0
@@ -163,9 +163,11 @@ asel,s,loc,x,6*a
 cm,outlet,area
 asel,all
 vext,inlet,,,-12*a,0,0
+extopt,esize,30,5
 vext,outlet,,,30*a,0,0
 asel,s,loc,z,3*a
 cm,top,area
+extopt,esize,20,7
 vext,top,,,0,0,12*a
 allsel
 asel,s,loc,z,0
