@@ -1,0 +1,110 @@
+fini 
+ /clear,nostart 
+ /prep7 
+ 
+  a=0.2 
+  b=0.1 
+  esize,0.02
+  rect,0,2*a,0,2*a
+  cm,obl,area
+ asel,none
+ rect,b,a+b,b,a+b
+ cm,centr,area
+ asel,a,,,obl
+ asba,obl,centr,,delete,keep
+ nummrg,all
+ wprota,0,0,90
+ wpave,b,0,0
+ asbw,all
+ wpave,b+a,0,0
+ asbw,all
+ wprota,0,90,0
+ wpave,0,b,0
+ asbw,all
+ wpave,0,b+a,0
+ asbw,all
+ 
+ lsel,s,loc,x,b/2
+ lsel,a,loc,x,2*a-b/2
+ lsel,a,loc,y,b/2            
+ lsel,a,loc,y,2*a-b/2
+ lsel,u,loc,x,0
+ lsel,u,loc,x,2*a
+ lsel,u,loc,y,0
+ lsel,u,loc,y,2*a
+ cm,perekrestok,line
+ lesize,perekrestok,,,15,10
+ lsel,s,loc,x,a
+ lsel,a,loc,y,a
+ lsel,a,loc,x,0
+ lsel,a,loc,x,2*a
+ lsel,a,loc,y,0
+ lsel,a,loc,y,2*a
+ lesize,all,,,15
+ 
+ 
+ cm,nachalo,area
+ agen,3,nachalo,,,0.4,,,,0
+ cm,nachalo,area
+ agen,3,nachalo,,,,0.4,,,0
+ nummrg,all
+ cm,niz,area
+
+  et,1,200,6
+  amesh,all
+  et,2,200,10 
+  type,2 
+  extopt,esize,15,0
+ vext,all,,,0,0,3*a
+ 
+ 
+
+asel,s,loc,x,0
+cm,inlet,area
+asel,s,loc,x,6*a
+cm,outlet,area
+asel,s,loc,y,0
+cm,left,area
+asel,s,loc,y,6*a
+cm,right,area
+asel,s,loc,z,3*a
+cm,top,area
+asel,all
+extopt,esize,20,7
+vext,left,,,0,-12*a,0
+vext,right,,,0,12*a,0
+asel,s,loc,x,0
+cm,inlet,area
+asel,s,loc,x,6*a
+cm,outlet,area
+asel,all
+vext,inlet,,,-12*a,0,0
+extopt,esize,30,5
+vext,outlet,,,30*a,0,0
+asel,s,loc,z,3*a
+cm,top,area
+extopt,esize,20,7
+vext,top,,,0,0,12*a
+allsel
+asel,s,loc,z,0
+asel,a,,,wall
+cmdele,all
+nsla,s,1
+cm,wall,node
+asel,s,loc,x,-12*a
+nsla,s,1
+cm,inlet,node
+asel,s,loc,x,36*a
+nsla,s,1
+cm,outlet,node
+asel,s,loc,y,-12*a
+nsla,s,1
+cm,left,node
+asel,s,loc,y,18*a
+nsla,s,1
+cm,right,node
+asel,s,loc,z,15*a
+nsla,s,1
+cm,top,node
+allsel
+cdwrite,db,setochkaa,cdb

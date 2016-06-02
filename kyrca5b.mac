@@ -1,0 +1,32 @@
+fini 
+ /clear,nostart 
+ /prep7 
+ 
+  a=0.2 
+  b=0.1 
+  esize,0.02
+ rect,b,a+b,b,a+b
+ cm,nachalo,area
+ agen,3,nachalo,,,0.4,,,,0
+ cm,nachalo,area
+ agen,3,nachalo,,,,0.4,,,0
+  cm,niz,area
+   et,1,200,6
+  amesh,all
+  asel,r,loc,x,2*a,4*a
+  asel,r,loc,y,2*a,4*a
+  cm,centrniz,area
+  asel,all
+  asel,u,,,centrniz
+  et,2,200,10 
+  type,2 
+  extopt,esize,10,0
+ vext,all,,,0,0,a
+ asel,s,,,centrniz
+ vext,all,,,0,0,2*a
+ allsel,all
+ nummrg,all
+ 
+nsla,s,1
+cm,wall,node
+cdwrite,db,setochkab,cdb

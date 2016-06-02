@@ -1,0 +1,1451 @@
+FLOW: Flow Analysis 1
+  &replace OUTPUT CONTROL: 
+    BACKUP RESULTS: point
+      File Compression Level = Default
+      Include Mesh = Off
+      Option = Selected Variables
+      Output Variables List = Pressure,Yplus,Wall Shear,Velocity,Vorticity,Turbulence Kinetic Energy,Turbulence Eddy Dissipation
+      OUTPUT FREQUENCY: 
+        Option = Every Iteration
+      END
+    END
+    MONITOR OBJECTS: 
+      MONITOR BALANCES: 
+        Option = Full
+      END
+      MONITOR FORCES: 
+        Option = Full
+      END
+      MONITOR PARTICLES: 
+        Option = Full
+      END
+      MONITOR POINT: point10
+        Cartesian Coordinates = 0.45 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point103
+        Cartesian Coordinates = 0.50 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point104
+        Cartesian Coordinates = 0.55 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point105
+        Cartesian Coordinates = 0.60 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point106
+        Cartesian Coordinates = 0.65 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point107
+        Cartesian Coordinates = 0.70 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point108
+        Cartesian Coordinates = 0.75 [m], 0.5 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point109
+        Cartesian Coordinates = 0.80 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point11
+        Cartesian Coordinates = 0.45 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point110
+        Cartesian Coordinates = 0.85 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point111
+        Cartesian Coordinates = 0.90 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point112
+        Cartesian Coordinates = 0.50 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point113
+        Cartesian Coordinates = 0.55 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point114
+        Cartesian Coordinates = 0.60 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point116
+        Cartesian Coordinates = 0.70 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point117
+        Cartesian Coordinates = 0.75 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point118
+        Cartesian Coordinates = 0.80 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point119
+        Cartesian Coordinates = 0.85 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point12
+        Cartesian Coordinates = 0.45 [m], 0.90 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point120
+        Cartesian Coordinates = 0.90 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point121
+        Cartesian Coordinates = 0.50 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point122
+        Cartesian Coordinates = 0.55 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point123
+        Cartesian Coordinates = 0.60 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point124
+        Cartesian Coordinates = 0.65 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point125
+        Cartesian Coordinates = 0.70 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point126
+        Cartesian Coordinates = 0.75 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point127
+        Cartesian Coordinates = 0.80 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point128
+        Cartesian Coordinates = 0.85 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point129
+        Cartesian Coordinates = 0.90 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point13
+        Cartesian Coordinates = 0.40 [m], 0.50 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point130
+        Cartesian Coordinates = 0.75 [m], 0.90 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point131
+        Cartesian Coordinates = 0.80 [m], 0.90 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point132
+        Cartesian Coordinates = 0.85 [m], 0.90 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point14
+        Cartesian Coordinates = 0.40 [m], 0.55 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point15
+        Cartesian Coordinates = 0.40 [m], 0.60 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point16
+        Cartesian Coordinates = 0.40 [m], 0.65 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point17
+        Cartesian Coordinates = 0.40 [m], 0.70 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point18
+        Cartesian Coordinates = 0.40 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point19
+        Cartesian Coordinates = 0.40 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point20
+        Cartesian Coordinates = 0.40 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point21
+        Cartesian Coordinates = 0.40 [m], 0.90 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point22
+        Cartesian Coordinates = 0.35 [m], 0.50 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point23
+        Cartesian Coordinates = 0.35 [m], 0.55 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point24
+        Cartesian Coordinates = 0.35 [m], 0.60 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point25
+        Cartesian Coordinates = 0.35 [m], 0.55 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point26
+        Cartesian Coordinates = 0.35 [m], 0.70 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point27
+        Cartesian Coordinates = 0.35 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point28
+        Cartesian Coordinates = 0.35 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point29
+        Cartesian Coordinates = 0.35 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point30
+        Cartesian Coordinates = 0.35 [m], 0.90 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point31
+        Cartesian Coordinates = 0.30 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point32
+        Cartesian Coordinates = 0.30 [m], 0.80 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point33
+        Cartesian Coordinates = 0.30 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point38
+        Cartesian Coordinates = 0.65 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point39
+        Cartesian Coordinates = 0.60 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point4
+        Cartesian Coordinates = 0.45 [m], 0.50 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point40
+        Cartesian Coordinates = 0.55 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point41
+        Cartesian Coordinates = 0.50 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point42
+        Cartesian Coordinates = 0.45 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point43
+        Cartesian Coordinates = 0.40 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point44
+        Cartesian Coordinates = 0.35 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point45
+        Cartesian Coordinates = 0.30 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point47
+        Cartesian Coordinates = 0.65 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point48
+        Cartesian Coordinates = 0.60 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point49
+        Cartesian Coordinates = 0.55 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point5
+        Cartesian Coordinates = 0.45 [m], 0.55 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point50
+        Cartesian Coordinates = 0.50 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point51
+        Cartesian Coordinates = 0.45 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point52
+        Cartesian Coordinates = 0.40 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point53
+        Cartesian Coordinates = 0.35 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point54
+        Cartesian Coordinates = 0.30 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point56
+        Cartesian Coordinates = 0.65 [m], 0.85 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point57
+        Cartesian Coordinates = 0.60 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point58
+        Cartesian Coordinates = 0.55 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point59
+        Cartesian Coordinates = 0.50 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point6
+        Cartesian Coordinates = 0.45 [m], 0.60 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point60
+        Cartesian Coordinates = 0.45 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point61
+        Cartesian Coordinates = 0.40 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point62
+        Cartesian Coordinates = 0.35 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point63
+        Cartesian Coordinates = 0.30 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point64
+        Cartesian Coordinates = 0.45 [m], 0.30 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point65
+        Cartesian Coordinates = 0.40 [m], 0.30 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point66
+        Cartesian Coordinates = 0.35 [m], 0.30 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point67
+        Cartesian Coordinates = 0.70 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point68
+        Cartesian Coordinates = 0.70 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point69
+        Cartesian Coordinates = 0.70 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point7
+        Cartesian Coordinates = 0.45 [m], 0.65 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point70
+        Cartesian Coordinates = 0.75 [m], 0.70 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point71
+        Cartesian Coordinates = 0.75 [m], 0.65 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point72
+        Cartesian Coordinates = 0.75 [m], 0.60 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point73
+        Cartesian Coordinates = 0.75 [m], 0.55 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point74
+        Cartesian Coordinates = 0.75 [m], 0.50 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point75
+        Cartesian Coordinates = 0.75 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point77
+        Cartesian Coordinates = 0.75 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point78
+        Cartesian Coordinates = 0.75 [m], 0.30 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point79
+        Cartesian Coordinates = 0.80 [m], 0.70 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point8
+        Cartesian Coordinates = 0.45 [m], 0.70 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point80
+        Cartesian Coordinates = 0.80 [m], 0.65 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point81
+        Cartesian Coordinates = 0.80 [m], 0.60 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point82
+        Cartesian Coordinates = 0.80 [m], 0.55 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point83
+        Cartesian Coordinates = 0.80 [m], 0.50 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point84
+        Cartesian Coordinates = 0.80 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point85
+        Cartesian Coordinates = 0.80 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point86
+        Cartesian Coordinates = 0.80 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point87
+        Cartesian Coordinates = 0.80 [m], 0.30 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point88
+        Cartesian Coordinates = 0.85 [m], 0.70 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point89
+        Cartesian Coordinates = 0.85 [m], 0.65 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point9
+        Cartesian Coordinates = 0.45 [m], 0.75 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point90
+        Cartesian Coordinates = 0.85 [m], 0.60 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point91
+        Cartesian Coordinates = 0.85 [m], 0.55 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point92
+        Cartesian Coordinates = 0.85 [m], 0.50 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point93
+        Cartesian Coordinates = 0.85 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point94
+        Cartesian Coordinates = 0.85 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point95
+        Cartesian Coordinates = 0.85 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point96
+        Cartesian Coordinates = 0.85 [m], 0.30 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point97
+        Cartesian Coordinates = 0.90 [m], 0.45 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point98
+        Cartesian Coordinates = 0.90 [m], 0.40 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR POINT: point99
+        Cartesian Coordinates = 0.90 [m], 0.35 [m], 0.02 [m]
+        Coord Frame = Coord 0
+        Option = Cartesian Coordinates
+        Output Variables List = Velocity
+        MONITOR LOCATION CONTROL: 
+          Interpolation Type = Nearest Vertex
+        END
+        POSITION UPDATE FREQUENCY: 
+          Option = Initial Mesh Only
+        END
+      END
+      MONITOR RESIDUALS: 
+        Option = Full
+      END
+      MONITOR TOTALS: 
+        Option = Full
+      END
+    END
+    RESULTS: 
+      File Compression Level = Default
+      Option = Standard
+      Output Equation Residuals = All
+    END
+  END
+END
