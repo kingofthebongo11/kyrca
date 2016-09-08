@@ -3,3 +3,4 @@ u=[0 ones(1,numel(t)-1)]
 x=1-exp(-t)
 be=(x(2:end)-x(1:end-1))./(t(2:end)-t(1:end-1))
 G=[x(1:end-1);u(1:end-1)]'
+inv(G'*G)*G'*be'
