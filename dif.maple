@@ -1,0 +1,38 @@
+restart:with(linalg):
+> print(`Exact`);
+> omega2:=400;f:=x:
+> xa:=0: xb:=1: lab:=xb-xa:
+> va:=0: vb:=2:
+> va_x:=1+cos(0)/sin(1): vb_x:=1+cos(1)/sin(1): 
+> Al:=[ [ 1,0,0,0 ] , [ 0,0,1,0 ] ] :
+> deq:=diff(v(x),x$2)+omega2*v(x)=f;
+> vgs:=[v(xa),D(v)(xa),v(xb),D(v)(xb)]:
+> vg:=[va,va_x,vb,vb_x]:
+> dsg1:=dotprod(Al[1],Re(vgs-evalf(vg)))=0;
+> dsg2:=dotprod(Al[2],Re(vgs-evalf(vg)))=0;
+> v:=subs(dsolve({deq,dsg1,dsg2},{v(x)}),v(x));
+> v_x:diff(v,x):
+> printf(` x = %14.8f%14.8f%14.8f\n`,evalf(xa),evalf(xa+lab/2),evalf(xb)):
+> printf(`Tochnoe reshenie\n`):
+> printf(` v = %14.8f%14.8f%14.8f\n`,evalf(subs(x=xa,v)),evalf(subs(x=xa+lab/2,v)),evalf(subs(x=xb,v)));
+> #macro(skyblue = COLOR(RGB, 1, 0.5, 0));
+> #plot(y, x=0..1,color=skyblue,thickness=15);
+> #Metod Bubnova-Galerkina
+> nP:=15:
+> nC:=nP+1-2:
+> uk:=[2*x,x^i-x$i=2..nP]:
+> Ck:=[1,C[i]$i=1..nC]:
+> u:=dotprod(Ck,uk):
+> R:=diff(u,x$2)+omega2*u-f:
+> for k from 1 by 1 to nC do
+> stemp:=int(uk[k+1]*R,x=xa..xb)=0:
+> if k=1 then s:=stemp:else s:=s,stemp:fi
+> od:
+> s:
+> sol2:=solve({s}):
+> for k in $1..nC do C[k]:=subs(sol2,C[k]): od:
+> u:
+> printf(`Metod Bubnova-Galerkina\n`):
+> printf(` u = %14.8f%14.8f%14.8f\n`,evalf(subs(x=xa,u)),evalf(subs(x=xa+lab/2,u)),evalf(subs(x=xb,u)));
+> 
+> plot({v,u},x=xa..xb,color=[red,blue],thickness=[30,3]);
