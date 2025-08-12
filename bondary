@@ -1,0 +1,133 @@
+FLOW: Flow Analysis 1
+  &replace DOMAIN: Default Domain
+    Coord Frame = Coord 0
+    Domain Type = Fluid
+    Location = Primitive 3D
+    BOUNDARY: inlet
+      Boundary Type = INLET
+      Interface Boundary = Off
+      Location = INLET
+      BOUNDARY CONDITIONS: 
+        FLOW REGIME: 
+          Option = Subsonic
+        END
+        MASS AND MOMENTUM: 
+          Option = Cartesian Velocity Components
+          U = veter
+          V = 0 [m s^-1]
+          W = 0 [m s^-1]
+        END
+        TURBULENCE: 
+          Eddy Length Scale = 0.4 [m]
+          Option = k and Length Scale
+          k = k1
+        END
+      END
+    END
+    BOUNDARY: left
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = LEFT
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = Free Slip Wall
+        END
+      END
+    END
+    BOUNDARY: outlet
+      Boundary Type = OUTLET
+      Interface Boundary = Off
+      Location = OUTLET
+      BOUNDARY CONDITIONS: 
+        FLOW REGIME: 
+          Option = Subsonic
+        END
+        MASS AND MOMENTUM: 
+          Option = Cartesian Velocity Components
+          U = veter
+          V = 0 [m s^-1]
+          W = 0 [m s^-1]
+        END
+      END
+    END
+    BOUNDARY: right
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = RIGHT
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+        END
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END
+      END
+    END
+    BOUNDARY: top
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = TOP
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = Free Slip Wall
+        END
+      END
+    END
+    BOUNDARY: wall
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = WALL
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+        END
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END
+      END
+    END
+    DOMAIN MODELS: 
+      BUOYANCY MODEL: 
+        Option = Non Buoyant
+      END
+      DOMAIN MOTION: 
+        Option = Stationary
+      END
+      MESH DEFORMATION: 
+        Option = None
+      END
+      REFERENCE PRESSURE: 
+        Reference Pressure = 1 [atm]
+      END
+    END
+    FLUID DEFINITION: Fluid 1
+      Material = Air at 25 C
+      Option = Material Library
+      MORPHOLOGY: 
+        Option = Continuous Fluid
+      END
+    END
+    FLUID MODELS: 
+      COMBUSTION MODEL: 
+        Option = None
+      END
+      HEAT TRANSFER MODEL: 
+        Fluid Temperature = 25 [C]
+        Option = Isothermal
+      END
+      THERMAL RADIATION MODEL: 
+        Option = None
+      END
+      TURBULENCE MODEL: 
+        Option = k epsilon
+      END
+      TURBULENT WALL FUNCTIONS: 
+        Option = Scalable
+      END
+    END
+  END
+END

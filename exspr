@@ -1,0 +1,8 @@
+LIBRARY: 
+  CEL: 
+    &replace EXPRESSIONS: 
+      k1 = kfunc(z)
+      veter = veterok(z)
+    END
+  END
+END

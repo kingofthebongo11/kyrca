@@ -1,0 +1,22 @@
+FLOW: Flow Analysis 1
+  &replace SOLVER CONTROL: 
+    Turbulence Numerics = First Order
+    ADVECTION SCHEME: 
+      Option = High Resolution
+    END
+    CONVERGENCE CONTROL: 
+      Length Scale Option = Conservative
+      Maximum Number of Iterations = 200
+      Minimum Number of Iterations = 1
+      Timescale Control = Auto Timescale
+      Timescale Factor = 1.0
+    END
+    CONVERGENCE CRITERIA: 
+      Residual Target = 0.00001
+      Residual Type = MAX
+    END
+    DYNAMIC MODEL CONTROL: 
+      Global Dynamic Model Control = On
+    END
+  END
+END

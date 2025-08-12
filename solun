@@ -1,0 +1,10 @@
+FLOW: Flow Analysis 1
+  &replace SOLUTION UNITS: 
+    Angle Units = [rad]
+    Length Units = [m]
+    Mass Units = [kg]
+    Solid Angle Units = [sr]
+    Temperature Units = [K]
+    Time Units = [s]
+  END
+END
